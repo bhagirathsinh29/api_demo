@@ -36,6 +36,7 @@ class _HomePageState extends State<HomePage> {
           builder: ((context, snapshot) {
             if (snapshot.hasData) {
               return ListView.builder(
+                scrollDirection: Axis.vertical,
                 itemCount: snapshot.data!.length,
                 itemBuilder: (ctx, index) {
                   return Card(
